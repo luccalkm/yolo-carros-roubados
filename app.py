@@ -26,8 +26,8 @@ def index():
             text_list = object_detection(path_save,filename)
             print(text_list)
 
-            #Criando a URL
-            api_url = f'{BASE_URL}KPY9692/{TOKEN}'
+            #Criando a URL para a API
+            api_url = f'{BASE_URL}{text_list[0]}/{TOKEN}'
             print(api_url)
 
             # # Fazendo a requisição para a API
@@ -40,7 +40,7 @@ def index():
                 print(situacao)
                 if situacao == '' or situacao == 'none':
                     situacao = 'Não encontrado'
-
+                    
                 print("Requisição bem-sucedida:", json_response)
             else:
                 # Tratar erros na requisição
