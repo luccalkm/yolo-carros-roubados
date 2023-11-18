@@ -40,7 +40,7 @@ def index():
                 situacao = json_response.get('situacao', '')
                 print(situacao)
                 if situacao == '' or situacao == 'none':
-                    situacao = 'Não encontrado'
+                    situacao = 'Não encontrado no sistema'
                     
                 print("Requisição bem-sucedida:", json_response)
             else:
