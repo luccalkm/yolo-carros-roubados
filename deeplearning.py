@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 import pytesseract as pt
 
-pt.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+pt.pytesseract.tesseract_cmd = 'static\\Tesseract-OCR\\tesseract.exe'
 
 # CARREGAR MODELO IA YOLO
 INPUT_WIDTH =  640
