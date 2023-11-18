@@ -10,7 +10,7 @@ app = Flask(__name__)
 BASE_PATH = os.getcwd()
 UPLOAD_PATH = os.path.join(BASE_PATH,'static/upload/')
 # TOKEN = '9f705c754c2fb29a3fc7ef36c8d74469' ## token de consulta para apresentação
-TOKEN = '40be640bf60ee817be81169aad1d7616'
+TOKEN = '40be640bf60ee817be81169aad1d7616' ## token teste
 BASE_URL = 'https://wdapi2.com.br/consulta/'
 
 
