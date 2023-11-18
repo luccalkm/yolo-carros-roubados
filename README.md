@@ -9,7 +9,7 @@ Projeto de busca de carros roubados utilizando api do SINESP
 4. Instalar as dependências com : `pip install -r requirements.txt`
 5. Depois disso só rodar o app com o comando: `py app.py`
 
-### Token
+### Token de consulta a situação do carro
 
 O token expira, é recomendado que crie uma conta no 
 > https://apiplacas.com.br/
