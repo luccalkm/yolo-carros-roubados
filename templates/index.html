@@ -10,7 +10,7 @@
             </div>
         </form>
     </div>
-
+    <br><br>
     {% if upload %}
         <div class="container">
             <table>
@@ -27,12 +27,12 @@
             <br>
             <table style="border: solid black; width: 100%;">
                 <tr style="border: solid black;">
-                    <th>Number of Licence Plate Detected = {{no}}</th>
+                    <th style="padding: 8px;">Quantidade de placas detectadas ({{no}})</th>
                 </tr>
                     {% for lic in text %}
                     <tr style="border: solid black;">
-                    <td style="background-color: greenyellow;">
-                        <p class="display-8"> {{ lic }}</p>
+                    <td style="padding: 8px; background-color: rgb(240, 240, 240);">
+                        <p class="display-8"> <b>Placa do veículo:</b> {{ lic }}</p>
                         <p class="display-8"> <b>Situação do veículo:</b> {{ situacao }}</p>
                     </td>
                     </tr>
