@@ -9,7 +9,8 @@ app = Flask(__name__)
 
 BASE_PATH = os.getcwd()
 UPLOAD_PATH = os.path.join(BASE_PATH,'static/upload/')
-TOKEN = '3818304a07c8d8aff81e53aeb29a9f7b'
+# TOKEN = '9f705c754c2fb29a3fc7ef36c8d74469' ## token de consulta para apresentação
+TOKEN = '40be640bf60ee817be81169aad1d7616'
 BASE_URL = 'https://wdapi2.com.br/consulta/'
 
 
@@ -43,6 +44,7 @@ def index():
                     
                 print("Requisição bem-sucedida:", json_response)
             else:
+                situacao = 'Não encontrado'
                 # Tratar erros na requisição
                 print("Erro na requisição:", response.status_code)
 
