@@ -4,7 +4,6 @@ from deeplearning import object_detection
 import requests
 from urllib.parse import quote
 
-
 app = Flask(__name__)
 
 BASE_PATH = os.getcwd()
@@ -56,4 +55,4 @@ def index():
 
 
 if __name__ =="__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=3000)
