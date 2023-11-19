@@ -8,9 +8,8 @@ app = Flask(__name__)
 
 BASE_PATH = os.getcwd()
 UPLOAD_PATH = os.path.join(BASE_PATH,'static/upload/')
-TOKEN = '63848b3d68546b6315836d7ea2361e9e' ## token api
+TOKEN = '63848b3d68546b6315836d7ea2361e9e' ## token api (10 requisicoes free)
 BASE_URL = 'https://wdapi2.com.br/consulta/'
-
 
 @app.route('/',methods=['POST','GET'])
 def index():

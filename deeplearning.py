@@ -2,9 +2,11 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 import pytesseract as pt
+import platform
 
-pt.pytesseract.tesseract_cmd = 'static\\Tesseract-OCR\\tesseract.exe'
-
+if(platform.system() == 'Windows'):
+    pt.pytesseract.tesseract_cmd = 'static\\Tesseract-OCR\\tesseract.exe'
+    
 # CARREGAR MODELO IA YOLO
 INPUT_WIDTH =  640
 INPUT_HEIGHT = 640
